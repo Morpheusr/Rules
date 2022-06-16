@@ -1,0 +1,11 @@
+PROCESS-NAME,com.zhihu.android,去你妈的IP显示
+PROCESS-NAME,com.sina.weibo,去你妈的IP显示
+PROCESS-NAME,com.caij.see,去你妈的IP显示
+PROCESS-NAME,com.miHoYo.cloudgames.ys,DIRECT
+DOMAIN-KEYWORD,zhihu,去你妈的IP显示
+DOMAIN-KEYWORD,zhimg,去你妈的IP显示
+DOMAIN-KEYWORD,sinaimg,去你妈的IP显示
+DOMAIN-KEYWORD,weibo,去你妈的IP显示
+DOMAIN-SUFFIX,epic.com,选择
+DOMAIN-SUFFIX,api-takumi.mihoyo.com,DIRECT
+DOMAIN-SUFFIX,bbs-api.mihoyo.com,DIRECT
