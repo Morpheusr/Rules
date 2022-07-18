@@ -15,3 +15,4 @@ DOMAIN-SUFFIX,zhimg.cn
 DOMAIN-SUFFIX,sinaimg.cn
 DOMAIN-SUFFIX,weibo.cn
 DOMAIN-SUFFIX,api.coolapk.com
+DOMAIN-SUFFIX,grpc.bilibili.com
