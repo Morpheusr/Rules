@@ -1,0 +1,155 @@
+payload:
+#原HOST规则来自https://github.com/Skimige/AntiMakedingHosts
+##Mairuan
+  - DOMAIN-SUFFIX,mairuanwang.com
+  - DOMAIN-SUFFIX,www.mairuanwang.com
+  - DOMAIN-SUFFIX,mairuan.com
+  - DOMAIN-SUFFIX,www.mairuan.com
+  - DOMAIN-SUFFIX,mairuan.cn
+  - DOMAIN-SUFFIX,mairuan.net
+  - DOMAIN-SUFFIX,mairuan.com.cn
+  - DOMAIN-SUFFIX,www.mairuan.cn
+  - DOMAIN-SUFFIX,www.mairuan.net
+  - DOMAIN-SUFFIX,www.mairuan.com.cn
+  - DOMAIN-SUFFIX,logoshejishi.mairuan.com
+  - DOMAIN-SUFFIX,hypersnap.mairuan.com
+##Makeding
+  - DOMAIN-SUFFIX,wm.makeding.com
+  - DOMAIN-SUFFIX,vm.makeding.com
+  - DOMAIN-SUFFIX,www.makeding.com
+  - DOMAIN-SUFFIX,makeding.com
+  - DOMAIN-SUFFIX,www.4009997658.com
+  - DOMAIN-SUFFIX,4009997658.com
+
+##Softwares
+### Abbyy Software
+  - DOMAIN-SUFFIX,abbyychina.com
+  - DOMAIN-SUFFIX,www.abbyychina.com
+  - DOMAIN-SUFFIX,xia.abbyychina.com
+### Bartender
+  - DOMAIN-SUFFIX,bartender.cc
+  - DOMAIN-SUFFIX,www.bartender.cc
+  - DOMAIN-SUFFIX,xia.bartender.cc
+### Beyond Compare
+  - DOMAIN-SUFFIX,beyondcompare.cc
+  - DOMAIN-SUFFIX,www.beyondcompare.cc
+  - DOMAIN-SUFFIX,xia.beyondcompare.cc
+### ChemDraw
+  - DOMAIN-SUFFIX,chemdraw.com.cn
+  - DOMAIN-SUFFIX,www.chemdraw.com.cn
+  - DOMAIN-SUFFIX,xia.chemdraw.com.cn
+### CleanMyMac
+  - DOMAIN-SUFFIX,mycleanmymac.com
+  - DOMAIN-SUFFIX,www.mycleanmymac.com
+  - DOMAIN-SUFFIX,xia.mycleanmymac.com
+### Corel Draw
+  - DOMAIN-SUFFIX,coreldrawchina.com
+  - DOMAIN-SUFFIX,xia.coreldrawchina.com
+  - DOMAIN-SUFFIX,www.coreldrawchina.com
+### Corel VideoStudio
+  - DOMAIN-SUFFIX,huishenghuiying.com.cn
+  - DOMAIN-SUFFIX,www.huishenghuiying.com.cn
+  - DOMAIN-SUFFIX,xia.huishenghuiying.com.cn
+### DeepFreeze
+  - DOMAIN-SUFFIX,www.bingdianhuanyuan.cn
+  - DOMAIN-SUFFIX,xia.bingdianhuanyuan.cn
+  - DOMAIN-SUFFIX,bingdianhuanyuan.cn
+### EasyRecovery
+  - DOMAIN-SUFFIX,easyrecoverychina.com
+  - DOMAIN-SUFFIX,www.easyrecoverychina.com
+  - DOMAIN-SUFFIX,xia.easyrecoverychina.com
+### Edius
+  - DOMAIN-SUFFIX,ediuschina.com
+  - DOMAIN-SUFFIX,www.ediuschina.com
+  - DOMAIN-SUFFIX,xia.ediuschina.com
+### Flash (CN)
+  - DOMAIN-SUFFIX,flash.cn
+  - DOMAIN-SUFFIX,www.flash.cn
+  - DOMAIN-SUFFIX,geo2.adobe.com
+  - DOMAIN-SUFFIX,flash.2144.com
+  - DOMAIN-SUFFIX,www.2144.cn
+  - DOMAIN-SUFFIX,fpdownload2.macromedia.com
+  - DOMAIN-SUFFIX,fpdownload.macromedia.com
+  - DOMAIN-SUFFIX,macromedia.com
+### FL Studio
+  - DOMAIN-SUFFIX,flstudiochina.com
+  - DOMAIN-SUFFIX,www.flstudiochina.com
+  - DOMAIN-SUFFIX,xia.flstudiochina.com
+### Guitar Pro
+  - DOMAIN-SUFFIX,guitarpro.cc
+  - DOMAIN-SUFFIX,www.guitarpro.cc
+  - DOMAIN-SUFFIX,xia.guitarpro.cc
+### Hypersnap
+  - DOMAIN-SUFFIX,hypersnap.net
+  - DOMAIN-SUFFIX,www.hypersnap.net
+### IconWorkShop
+  - DOMAIN-SUFFIX,www.iconworkshop.cn
+  - DOMAIN-SUFFIX,iconworkshop.cn
+### iMindmap
+  - DOMAIN-SUFFIX,imindmap.cc
+  - DOMAIN-SUFFIX,www.imindmap.cc
+  - DOMAIN-SUFFIX,xia.imindmap.cc
+### Keyshot
+  - DOMAIN-SUFFIX,keyshot.cc
+  - DOMAIN-SUFFIX,xia.keyshot.cc
+  - DOMAIN-SUFFIX,www.keyshot.cc
+### Kingdee KIS
+  - DOMAIN-SUFFIX,kingdeecn.cn
+  - DOMAIN-SUFFIX,www.kingdeecn.cn
+  - DOMAIN-SUFFIX,xia.kingdeecn.cn
+### MathType
+  - DOMAIN-SUFFIX,mathtype.cn
+  - DOMAIN-SUFFIX,www.mathtype.cn
+  - DOMAIN-SUFFIX,xia.mathtype.cn
+### Microsoft 365
+  - DOMAIN-SUFFIX,officesoftcn.com
+  - DOMAIN-SUFFIX,www.officesoftcn.com
+### MindManager
+  - DOMAIN-SUFFIX,mindmanager.cc
+  - DOMAIN-SUFFIX,www.mindmanager.cc
+  - DOMAIN-SUFFIX,xia.mindmanager.cc
+### NetSarang Xshell
+  - DOMAIN-SUFFIX,xshellcn.com
+  - DOMAIN-SUFFIX,www.xshellcn.com
+  - DOMAIN-SUFFIX,xia.xshellcn.com
+### NTFS For Mac
+  - DOMAIN-SUFFIX,ntfsformac.cn
+  - DOMAIN-SUFFIX,www.ntfsformac.cn
+  - DOMAIN-SUFFIX,xia.ntfsformac.cn
+  - DOMAIN-SUFFIX,ntfsformac.cc
+  - DOMAIN-SUFFIX,www.ntfsformac.cc
+  - DOMAIN-SUFFIX,xiazai.ntfsformac.cc
+### PDF Expert
+  - DOMAIN-SUFFIX,pdfexpert.cc
+  - DOMAIN-SUFFIX,www.pdfexpert.cc
+  - DOMAIN-SUFFIX,xiazai.pdfexpert.cc
+  - DOMAIN-SUFFIX,www.xiazai.pdfexpert.cc
+### SketchPad
+  - DOMAIN-SUFFIX,jihehuaban.com.cn
+  - DOMAIN-SUFFIX,www.jihehuaban.com.cn
+  - DOMAIN-SUFFIX,xia.jihehuaban.com.cn
+### Sothink Logo Maker
+  - DOMAIN-SUFFIX,logoshejishi.com
+  - DOMAIN-SUFFIX,www.logoshejishi.com
+  - DOMAIN-SUFFIX,xia.logoshejishi.com
+### Sothink SWF Decompiler
+  - DOMAIN-SUFFIX,shankejingling.com
+  - DOMAIN-SUFFIX,www.shankejingling.com
+  - DOMAIN-SUFFIX,xia.shankejingling.com
+### TeamViewer
+  - DOMAIN-SUFFIX,yuanchengxiezuo.com
+  - DOMAIN-SUFFIX,www.yuanchengxiezuo.com
+### Ultraiso
+  - DOMAIN-SUFFIX,cn.ultraiso.net
+  - DOMAIN-SUFFIX,ultraiso.net
+### Vegas
+  - DOMAIN-SUFFIX,vegaschina.cn
+  - DOMAIN-SUFFIX,www.vegaschina.cn
+  - DOMAIN-SUFFIX,xia.vegaschina.cn
+### XMind
+  - DOMAIN-SUFFIX,xmindchina.net
+  - DOMAIN-SUFFIX,www.xmindchina.net
+  - DOMAIN-SUFFIX,xia.xmindchina.net
+### Zheng Zhao Zhi Xing (证照之星)
+  - DOMAIN-SUFFIX,www.zhzzx.com
+  - DOMAIN-SUFFIX,zhzzx.com
