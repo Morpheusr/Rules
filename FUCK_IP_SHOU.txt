@@ -17,3 +17,4 @@ DOMAIN-SUFFIX,weibo.cn
 DOMAIN-SUFFIX,api.coolapk.com
 DOMAIN-SUFFIX,grpc.bilibili.com
 DOMAIN-SUFFIX,grpc.biliapi.net
+DOMAIN-SUFFIX,passport.bilibili.com
