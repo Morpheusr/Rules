@@ -1,8 +1,5 @@
 payload:
-  - PROCESS-NAME,com.zhihu.android
-  - PROCESS-NAME,com.sina.weibo
   - PROCESS-NAME,com.caij.see
-  - PROCESS-NAME,com.coolapk.market
   - DOMAIN-SUFFIX,zhihu.com
   - DOMAIN-SUFFIX,zhimg.com
   - DOMAIN-SUFFIX,sinaimg.com
