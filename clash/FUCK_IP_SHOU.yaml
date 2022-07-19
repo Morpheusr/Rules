@@ -16,6 +16,23 @@ payload:
   - DOMAIN-SUFFIX,sinaimg.cn
   - DOMAIN-SUFFIX,weibo.cn
   - DOMAIN-SUFFIX,api.coolapk.com
+  # 哔哩哔哩IP定位接口
   - DOMAIN-SUFFIX,grpc.bilibili.com
   - DOMAIN-SUFFIX,grpc.biliapi.net
   - DOMAIN-SUFFIX,passport.bilibili.com
+  - DOMAIN,api.bilibili.com
+  # 知乎IP定位接口
+  - IP-CIDR,103.41.167.0/24
+  # 微博IP定位接口
+  - DOMAIN-SUFFIX, api.weibo.cn
+  # 贴吧IP定位接口
+  - DOMAIN,www.baidu.com
+  # 头条IP定位接口
+  - DOMAIN-SUFFIX,toutiaoapi.com
+  # 抖音IP定位接口
+  - DOMAIN-KEYWORD,core-c-lq
+  - DOMAIN-KEYWORD,core-lq
+  - DOMAIN-KEYWORD,normal-c-lq
+  - DOMAIN-KEYWORD,normal-lq
+  - DOMAIN-KEYWORD,search-quic-lq
+  - DOMAIN-KEYWORD,search-lq
