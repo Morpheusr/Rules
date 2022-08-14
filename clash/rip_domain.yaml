@@ -1,14 +1,11 @@
 payload:
-  - PROCESS-NAME,com.caij.see
   - DOMAIN-SUFFIX,api.coolapk.com
   # 哔哩哔哩IP定位接口
   - DOMAIN-SUFFIX,grpc.bilibili.com
   - DOMAIN-SUFFIX,grpc.biliapi.net
   - DOMAIN-SUFFIX,passport.bilibili.com
   - DOMAIN,api.bilibili.com
-  - IP-CIDR,203.170.1.0/24
   # 知乎IP定位接口
-  - IP-CIDR,103.41.167.0/24
   - DOMAIN-SUFFIX,zhihu.com
   - DOMAIN-SUFFIX,zhihu.cn
   # 微博IP定位接口
