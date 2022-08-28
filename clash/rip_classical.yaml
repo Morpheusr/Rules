@@ -2,6 +2,8 @@ payload:
   - IP-CIDR,203.170.1.0/24
   - IP-CIDR,103.41.167.0/24
   - DOMAIN-SUFFIX,api.coolapk.com
+  - DOMAIN-SUFFIX,api2.coolapk.com
+
   # 哔哩哔哩IP定位接口
   - DOMAIN-SUFFIX,grpc.bilibili.com
   - DOMAIN-SUFFIX,grpc.biliapi.net
