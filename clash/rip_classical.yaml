@@ -1,6 +1,5 @@
 payload:
   - IP-CIDR,203.170.1.0/24
-  - IP-CIDR,103.41.167.0/24
   - DOMAIN-SUFFIX,api.coolapk.com
   - DOMAIN-SUFFIX,api2.coolapk.com
 
@@ -9,20 +8,27 @@ payload:
   - DOMAIN-SUFFIX,grpc.biliapi.net
   - DOMAIN-SUFFIX,passport.bilibili.com
   - DOMAIN,api.bilibili.com
+  - DOMAIN-SUFFIX,biliapi.net
+  - DOMAIN,app.bilibili.com
+  - DOMAIN-SUFFIX,biliapi.com
+  - DOMAIN,api.live.bilibili.com
+  - DOMAIN,api.vc.bilibili.com
+  - DOMAIN,live-trace.bilibili.com
+  - DOMAIN,message.bilibili.com
+  - DOMAIN,cm.bilibili.com
+
   # 知乎IP定位接口
   - DOMAIN-SUFFIX,zhihu.com
   - DOMAIN-SUFFIX,zhihu.cn
+  - IP-CIDR,103.41.167.0/24
   # 微博IP定位接口
   - DOMAIN-SUFFIX,api.weibo.cn
   - DOMAIN-SUFFIX,sina.cn
   # 贴吧IP定位接口
   - DOMAIN,www.baidu.com
-  # 头条IP定位接口
-  - DOMAIN-SUFFIX,toutiaoapi.com
-  # 抖音IP定位接口
-  - DOMAIN-KEYWORD,core-c-lq
-  - DOMAIN-KEYWORD,core-lq
-  - DOMAIN-KEYWORD,normal-c-lq
-  - DOMAIN-KEYWORD,normal-lq
-  - DOMAIN-KEYWORD,search-quic-lq
-  - DOMAIN-KEYWORD,search-lq
+  - DOMAIN,tieba.baidu.com
+  - DOMAIN,tbmsg.baidu.com
+  - DOMAIN,tb5.bdstatic.com
+  - DOMAIN,fclog.baidu.com
+  - DOMAIN,gsp0.baidu.com
+  - DOMAIN,hm.baidu.com
