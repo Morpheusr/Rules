@@ -1,5 +1,5 @@
 payload:
-  - IP-CIDR,203.170.1.0/24
+ 
   - DOMAIN-SUFFIX,api.coolapk.com
   - DOMAIN-SUFFIX,api2.coolapk.com
 
@@ -8,14 +8,7 @@ payload:
   - DOMAIN-SUFFIX,grpc.biliapi.net
   - DOMAIN-SUFFIX,passport.bilibili.com
   - DOMAIN,api.bilibili.com
-  - DOMAIN-SUFFIX,biliapi.net
-  - DOMAIN,app.bilibili.com
-  - DOMAIN-SUFFIX,biliapi.com
-  - DOMAIN,api.live.bilibili.com
-  - DOMAIN,api.vc.bilibili.com
-  - DOMAIN,live-trace.bilibili.com
-  - DOMAIN,message.bilibili.com
-  - DOMAIN,cm.bilibili.com
+  - IP-CIDR,203.170.1.0/24
 
   # 知乎IP定位接口
   - DOMAIN-SUFFIX,zhihu.com
