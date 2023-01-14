@@ -1,0 +1,22 @@
+payload: 
+  - 'api.coolapk.com'
+  - 'api2.coolapk.com'
+  # 哔哩哔哩IP定位接口
+  - 'grpc.bilibili.com'
+  - 'grpc.biliapi.net'
+  - 'passport.bilibili.com'
+  - 'api.bilibili.com'
+  # 知乎IP定位接口
+  - 'zhihu.com'
+  - 'zhihu.cn'
+  # 微博IP定位接口
+  - 'api.weibo.cn'
+  - 'sina.cn'
+  # 贴吧IP定位接口
+  - 'www.baidu.com'
+  - 'tieba.baidu.com'
+  - 'tbmsg.baidu.com'
+  - 'tb5.bdstatic.com'
+  - 'fclog.baidu.com'
+  - 'gsp0.baidu.com'
+  - 'hm.baidu.com'
