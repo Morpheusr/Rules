@@ -7,7 +7,7 @@ payload:
   - DOMAIN-SUFFIX,grpc.bilibili.com
   - DOMAIN-SUFFIX,grpc.biliapi.net
   - DOMAIN-SUFFIX,passport.bilibili.com
-  - DOMAIN,api.bilibili.com
+  - DOMAIN-SUFFIX,api.bilibili.com
   - IP-CIDR,203.170.1.0/24
 
   # 知乎IP定位接口
