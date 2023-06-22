@@ -2,26 +2,45 @@ payload:
  
   - DOMAIN-SUFFIX,api.coolapk.com
   - DOMAIN-SUFFIX,api2.coolapk.com
+  # 哔哩哔哩
+  - DOMAIN-SUFFIX,biliapi.net # 哔哩哔哩API域名
+  - DOMAIN,api.bilibili.com # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口
+  - DOMAIN,api.bilibili.tv # 哔哩哔哩海外版？
+  - DOMAIN,app.bilibili.com # 哔哩哔哩App的API域名
+  - DOMAIN-SUFFIX,biliapi.com # 哔哩哔哩App的API域名
+  - DOMAIN,api.live.bilibili.com # 哔哩哔哩直播API域名
+  - DOMAIN,api.vc.bilibili.com # 哔哩哔哩视频API域名，Copilot提供
+  - DOMAIN,passport.bilibili.com # 哔哩哔哩账号登录API域名
+  - DOMAIN,live-trace.bilibili.com # 哔哩哔哩跟踪？API域名
+  - DOMAIN,message.bilibili.com # 哔哩哔哩消息API域名
+  - DOMAIN,cm.bilibili.com # 哔哩哔哩统计API域名
+  - DOMAIN-SUFFIX,bilibili.com # 哔哩哔哩全站域名，不包括内容CDN
+  - DOMAIN-SUFFIX,im9.com
+  - DOMAIN-SUFFIX,acg.tv
+  - DOMAIN-SUFFIX,biligame.com
+  - IP-CIDR,203.107.1.0/24,REJECT
 
-  # 哔哩哔哩IP定位接口
-  - DOMAIN-SUFFIX,grpc.bilibili.com
-  - DOMAIN-SUFFIX,grpc.biliapi.net
-  - DOMAIN-SUFFIX,passport.bilibili.com
-  - DOMAIN-SUFFIX,api.bilibili.com
-  - IP-CIDR,203.170.1.0/24
-
-  # 知乎IP定位接口
-  - DOMAIN-SUFFIX,zhihu.com
-  - DOMAIN-SUFFIX,zhihu.cn
-  - IP-CIDR,103.41.167.0/24
-  # 微博IP定位接口
-  - DOMAIN-SUFFIX,api.weibo.cn
-  - DOMAIN-SUFFIX,sina.cn
-  # 贴吧IP定位接口
-  - DOMAIN,www.baidu.com
-  - DOMAIN,tieba.baidu.com
-  - DOMAIN,tbmsg.baidu.com
-  - DOMAIN,tb5.bdstatic.com
-  - DOMAIN,fclog.baidu.com
-  - DOMAIN,gsp0.baidu.com
-  - DOMAIN,hm.baidu.com
+    # 知乎
+  - DOMAIN-SUFFIX,zhihu.com # 知乎全站域名，不包括图片CDN
+  - IP-CIDR,103.41.167.0/24 # 网友提供知乎IP定位接口
+  - IP-CIDR,118.89.204.198/23,REJECT # 知乎 HTTPDNS (IPv4)
+  - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,REJECT # 知乎 HTTPDNS (IPv6)
+    #微博
+  - DOMAIN-SUFFIX,weibo.cn
+  - DOMAIN-SUFFIX,weibo.com
+  - DOMAIN-SUFFIX,weibocdn.com
+  - DOMAIN-KEYWORD,weibo
+    #贴吧
+  - DOMAIN,tieba.baidu.com # 百度贴吧域名，不存在单独的API域名
+  - DOMAIN,tbmsg.baidu.com # 贴吧私信域名？
+  - DOMAIN,tb5.bdstatic.com # 贴吧不确定用途
+  - DOMAIN,fclog.baidu.com # 百度日志？
+  - DOMAIN,gsp0.baidu.com # 百度追踪？
+  - DOMAIN,hm.baidu.com # 百度统计
+  - DOMAIN,www.baidu.com # 网友提供贴吧IP定位接口
+  - DOMAIN,tiebac.baidu.com # 贴吧App API域名
+  - IP-CIDR,180.76.76.0/24 # Public DNS
+  - DOMAIN,httpsdns.baidu.com
+  - DOMAIN,c.tieba.baidu.com
+  - DOMAIN,httpdns.baidu.com
+  - DOMAIN,httpdns.baidubce.com
