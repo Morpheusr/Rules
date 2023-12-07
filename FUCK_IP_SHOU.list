@@ -1,9 +1,9 @@
 DOMAIN-SUFFIX,api.coolapk.com
 DOMAIN-SUFFIX,api2.coolapk.com
-DOMAIN-SUFFIX,grpc.bilibili.com
-DOMAIN-SUFFIX,grpc.biliapi.net
-DOMAIN-SUFFIX,passport.bilibili.com
+  # 哔哩哔哩
+DOMAIN-SUFFIX,grpc.biliapi.net 
 DOMAIN-SUFFIX,api.bilibili.com
+DOMAIN-SUFFIX,passport.bilibili.com
 IP-CIDR,203.170.1.0/24
 DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,zhihu.cn
