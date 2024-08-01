@@ -1,0 +1,405 @@
+ipv6: false
+allow-lan: true
+profile:
+  store-selected: true
+
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.local'
+  - dns.msftncsi.com
+  - www.msftncsi.com
+  - www.msftconnecttest.com
+  - stun.*.*.*
+  - stun.*.*
+  - miwifi.com
+  - music.163.com
+  - '*.music.163.com'
+  - '*.126.net'
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - '*.y.qq.com'
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - '*.xiami.com'
+  - '*.music.migu.cn'
+  - music.migu.cn
+  - netis.cc
+  - router.asus.com
+  - repeater.asus.com
+  - routerlogin.com
+  - routerlogin.net
+  - tendawifi.com
+  - tendawifi.net
+  - tplinklogin.net
+  - tplinkwifi.net
+  - tplinkrepeater.net
+  - '*.ntp.org.cn'
+  - '*.openwrt.pool.ntp.org'
+  - '*.msftconnecttest.com'
+  - '*.msftncsi.com'
+  - localhost.ptlogin2.qq.com
+  - '*.*.*.srv.nintendo.net'
+  - '*.*.stun.playstation.net'
+  - xbox.*.*.microsoft.com
+  - '*.ipv6.microsoft.com'
+  - '*.*.xboxlive.com'
+  - speedtest.cros.wr.pvp.net
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - tls://101.101.101.101:853
+  - https://101.101.101.101/dns-query
+  - https://public.dns.iij.jp/dns-query
+  - https://208.67.220.220/dns-query
+  fallback-filter:
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.twitter.com
+    - +.youtube.com
+    - +.xn--ngstr-lra8j.com
+    - +.google.cn
+    - +.googleapis.cn
+    - +.googleapis.com
+    - +.gvt1.com
+    - +.paoluz.com
+    - +.paoluz.link
+    - +.paoluz.xyz
+    - +.sodacity-funk.xyz
+    - +.nloli.xyz
+    - +.jsdelivr.net
+    - +.proton.me
+    geoip: true
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+    - 127.0.0.1/32
+  nameserver:
+  - tls://223.5.5.5:853
+  - https://223.6.6.6/dns-query
+  - https://120.53.53.53/dns-query
+  
+r: &r
+  type: http
+  behavior: domain
+  interval: 86400
+  
+p: &p
+  type: http
+  behavior: ipcidr
+  interval: 86400
+  
+z: &z
+  interval: 86400
+  health-check:
+   enable: true
+   interval: 1200
+   url: http://1.1.1.1/generate_204
+  
+n: &n
+  type: http
+  url: 
+  interval: 86400
+  health-check:
+   enable: true
+   interval: 1200
+   url: http://1.1.1.1/generate_204
+    
+proxy-providers:
+  Nexitally:
+    <<: *n
+    path: ./proxy/Nex.yaml
+
+  NexHK:
+    <<: *n
+    path: ./proxy/NexHK.yaml
+    filter: "Hong"
+      
+  NexJP:
+    <<: *n
+    path: ./proxy/NexJP.yaml
+    filter: "Japan"
+      
+  NexUSA:
+    <<: *n
+    path: ./proxy/NexUSA.yaml
+    filter: "USA"
+      
+  NexSG:
+    <<: *n
+    path: ./proxy/NexSG.yaml
+    filter: "Singapore"
+      
+  CitrusLab_Unlimited:
+    type: http
+    path: ./proxy/Unlimited.yaml
+    url: 
+    <<: *z
+     
+  Film_Unlimited:
+    type: http
+    path: ./proxy/Film_Unlimited.yaml
+    url: 
+    <<: *z
+ 
+  TAG:
+    type: http
+    path: ./proxy/TAG.yaml
+    url: 
+    <<: *z
+    
+  Download_only:
+    type: http
+    path: ./proxy/Download_only.yaml
+    url: 
+    <<: *z
+      
+proxy-groups:
+
+  - name: 代理
+    type: select
+    proxies:
+      - Nexitally
+      - Tag
+      - 香港
+      - 新加坡
+      - 日本
+      - 美国 
+      - CitrusLab 不限时
+      - Film 不限时
+
+                
+  - name: 去你妈的IP显示
+    type: select
+    proxies:
+      - DIRECT
+      - 代理
+      - 香港
+      - 新加坡
+      - 日本
+      - 美国
+      - 下载专用
+      - CitrusLab 不限时
+      - Film 不限时
+
+      
+  - name: 谷歌服务
+    type: select
+    proxies:
+      - 代理
+      - 香港
+      - 新加坡
+      - 日本
+      - 美国
+      - CitrusLab 不限时
+      - Film 不限时
+        
+  - name: 微软服务
+    type: select
+    proxies:
+      - 代理
+      - 香港
+      - 新加坡
+      - 日本
+      - 美国
+      - DIRECT
+      - CitrusLab 不限时
+      - Film 不限时
+      
+  - name: AI
+    type: select
+    proxies:
+      - 代理
+      - 香港
+      - 新加坡
+      - 日本
+      - 美国
+      - CitrusLab 不限时
+      - Film 不限时
+            
+  - name: 游戏
+    type: select
+    proxies:
+      - DIRECT
+      - 代理
+      - 香港
+      - 新加坡
+      - 日本
+      - 美国
+      - 下载专用
+      - CitrusLab 不限时
+      - Film 不限时
+      
+  - name: 国外流媒体
+    type: select
+    proxies:
+      - 代理
+      - Tag
+      - 香港
+      - 新加坡
+      - 日本
+      - 美国
+      - 下载专用
+      - CitrusLab 不限时
+      - Film 不限时
+            
+  - name: Nexitally
+    type: select
+    use:
+      - Nexitally
+      
+  - name: Tag
+    type: select
+    use:
+      - TAG  
+      
+  - name: CitrusLab 不限时
+    type: select
+    use:
+      - CitrusLab_Unlimited
+       
+  - name: Film 不限时
+    type: select
+    use:
+      - Film_Unlimited
+      
+  - name: 下载专用
+    type: select
+    use:
+      - Download_only
+
+
+  - name: 香港
+    type: fallback
+    use:
+      - NexHK
+      
+  - name: 日本
+    type: fallback
+    use:
+      - NexJP
+    
+  - name: 美国
+    type: fallback
+    use:
+      - NexUSA
+    
+  - name: 新加坡
+    type: fallback
+    use:
+      - NexSG
+
+  - name: 广告
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+      
+rule-providers:
+  # 广告
+  AD:
+    <<: *r
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./rule/TAG/Ad.yaml
+        
+  # 被墙的域名
+  Proxy:
+    <<: *r
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    path: ./rule/TAG/Proxy.yaml          
+    
+  FuckIP:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/Morpheusr/Rules/main/clash/rip_classical.yaml"
+    path: ./rule/TAG/FuckIP.yaml    
+    
+  AntiMakeding:
+    <<: *r
+    url: "https://raw.githubusercontent.com/Morpheusr/Rules/main/clash/AntiMakeding.yaml"
+    path: ./rule/TAG/AntiMakeding.yaml
+        
+        
+rules:
+  - SRC-IP-CIDR,192.168.5.239/32,DIRECT
+  - SRC-IP-CIDR,192.168.5.123/32,DIRECT
+  - SRC-IP-CIDR,192.168.5.183/32,DIRECT
+  - SRC-IP-CIDR,192.168.5.200/32,DIRECT
+  - RULE-SET,AD,广告
+  - RULE-SET,FuckIP,去你妈的IP显示
+  
+   # AI
+  - DOMAIN-SUFFIX,sentry.io,REJECT  
+  - DOMAIN-KEYWORD,openai,AI
+  - DOMAIN-SUFFIX,ai.com,AI
+  - GEOSITE,anthropic,AI
+  - DOMAIN-SUFFIX,claude.ai,AI
+  - DOMAIN-SUFFIX,bard.google.com,AI
+  - DOMAIN-SUFFIX,makersuite.google.com,AI
+  
+    # SUFFIX 
+  - DOMAIN-SUFFIX,greasyfork.org,代理
+  - DOMAIN-SUFFIX,civitai.com,代理
+  - DOMAIN-SUFFIX,web.archive.org,代理
+  - DOMAIN-SUFFIX,microsoft.com,微软服务
+  - DOMAIN-SUFFIX,gov.cn,代理
+  - DOMAIN-SUFFIX,mail.com,美国
+  - DOMAIN,api.bilibili.com,去你妈的IP显示
+
+    # KEYWORD
+
+
+    
+    # RULE
+  - GEOIP,google,谷歌服务  
+  - GEOIP,telegram,代理  
+  - GEOIP,twitter,代理 
+  
+    
+  - GEOSITE,google,谷歌服务
+  - GEOSITE,googlefcm,谷歌服务 
+  
+  - GEOSITE,microsoft,微软服务
+  - GEOSITE,bing,微软服务
+  - GEOSITE,bing@cn,微软服务
+  - GEOSITE,azure,微软服务
+  
+  - GEOSITE,telegram,代理
+  - GEOSITE,gitlab,代理
+  - GEOSITE,github,代理
+  - GEOSITE,ehentai,代理
+  - GEOSITE,twitter,代理
+  - GEOSITE,pixiv,代理
+  - GEOSITE,binance,代理
+  
+  - GEOSITE,ea,游戏
+  - GEOSITE,ubisoft,游戏
+  - GEOSITE,nintendo,游戏
+  - GEOSITE,steam,游戏
+  - GEOSITE,epicgames,游戏
+  
+  - GEOIP,netflix,国外流媒体
+  - GEOSITE,netflix,国外流媒体
+  - GEOSITE,youtube,国外流媒体
+  - GEOSITE,spotify,国外流媒体
+  - GEOSITE,tiktok,国外流媒体
+  
+  - GEOSITE,mihoyo-cn,DIRECT
+  - GEOSITE,alibaba,DIRECT
+  - GEOSITE,adobe,REJECT
+  - GEOSITE,adobe-activation,REJECT
+  
+  - RULE-SET,Proxy,代理
+    #未命中规则的处理方式
+  - MATCH,DIRECT
