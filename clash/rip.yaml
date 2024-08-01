@@ -2,10 +2,10 @@ payload:
   - 'api.coolapk.com'
   - 'api2.coolapk.com'
   # 哔哩哔哩IP定位接口
-  - 'grpc.bilibili.com'
-  - 'grpc.biliapi.net'
-  - 'passport.bilibili.com'
-  - 'api.bilibili.com'
+  - '+.grpc.bilibili.com'
+  - '+.grpc.biliapi.net'
+  - '+.passport.bilibili.com'
+  - '+.api.bilibili.com'
   # 知乎IP定位接口
   - 'zhihu.com'
   - 'zhihu.cn'
